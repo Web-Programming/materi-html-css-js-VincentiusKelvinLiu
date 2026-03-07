@@ -6,132 +6,218 @@
   <title>PT. Konstruksi Jaya Utama</title>
   <style>
     body {
-        font-family: "Times New Roman", serif;
-        background-color: white;
-        margin: 0;
-        padding: 0;
+      font-family: "Times New Roman", serif;
+      background: linear-gradient(to bottom, #f4f6f8, #e9edf2);
+      margin: 0;
+      padding: 0;
+      color: #222;
     }
 
     .container {
-        width: 98%;
-        margin: 0 auto;
-        padding: 10px;
+      width: 95%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px 25px;
+      background-color: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     }
 
     h1 {
-        font-size: 28px;
-        margin-bottom: 10px;
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #ffffff;
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      padding: 14px 18px;
+      border-radius: 10px;
+      letter-spacing: 1px;
+      box-shadow: 0 3px 8px rgba(13, 71, 161, 0.25);
     }
 
     .hero img {
-        width: 800px;
-        height: 350px;
-        object-fit: cover;
-        display: block;
-        margin-left: 0;
+      width: 800px;
+      height: 350px;
+      object-fit: cover;
+      display: block;
+      margin-left: 0;
+      border-radius: 12px;
+      border: 3px solid #d9e2ec;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     .tagline {
-        margin: 10px 0;
-        font-size: 14px;
+      margin: 12px 0;
+      font-size: 16px;
+      font-style: italic;
+      color: #444;
     }
 
     hr {
-        border: 0;
-        border-top: 1px solid black;
-        margin: 15px 0;
+      border: 0;
+      border-top: 1px solid #c7d0d9;
+      margin: 18px 0;
     }
 
     h2 {
-        font-size: 24px;
-        margin-top: 10px;
-        margin-bottom: 15px;
+      font-size: 26px;
+      margin-top: 10px;
+      margin-bottom: 18px;
+      color: #0d47a1;
+      border-left: 6px solid #1976d2;
+      padding-left: 10px;
     }
 
     .layanan-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
     .layanan-box {
-        width: 48%;
+      width: 48%;
+      background-color: #f8fbff;
+      border: 1px solid #dbe7f3;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
     }
 
     .layanan-box h3 {
-        font-size: 18px;
-        margin-bottom: 8px;
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #1a237e;
     }
 
     .layanan-box p {
-        font-size: 14px;
-        margin-bottom: 10px;
+      font-size: 16px;
+      margin-bottom: 12px;
+      line-height: 1.6;
     }
 
     .layanan-box img {
-        width: 200px;
-        height: 150px;
-        object-fit: cover;
-        display: block;
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+      border: 2px solid #dde6ef;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-section {
+      margin-top: 25px;
     }
 
     .project-section p {
-        font-size: 14px;
+      font-size: 16px;
+      color: #333;
     }
 
     table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      background-color: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     }
 
     table, th, td {
-        border: 1px solid grey;
+      border: 1px solid #cfd8dc;
     }
 
     th, td {
-        padding: 8px;
-        text-align: left;
-        vertical-align: middle;
-        font-size: 14px;
+      padding: 12px;
+      text-align: left;
+      vertical-align: middle;
+      font-size: 15px;
     }
 
     th {
-        text-align: center;
-        font-weight: bold;
+      text-align: center;
+      font-weight: bold;
+      background-color: #1976d2;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f7fafd;
     }
 
     td img {
-        width: 60px;
-        height: 60px;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
 
     .contact-section {
-        margin-top: 20px;
+      margin-top: 25px;
+      background-color: #f8fbff;
+      border: 1px solid #dbe7f3;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .contact-section form div {
+      margin-bottom: 12px;
     }
 
     .contact-section label {
-        display: inline-block;
-        width: 130px;
-        margin-bottom: 8px;
-        font-size: 14px;
+      display: inline-block;
+      width: 160px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #1f2937;
     }
 
-    .contact-section input,
+    .contact-section input[type="text"],
     .contact-section select {
-        font-size: 14px;
-        padding: 2px 4px;
+      width: 260px;
+      padding: 8px 10px;
+      font-size: 15px;
+      border: 1px solid #b0bec5;
+      border-radius: 6px;
+      outline: none;
+      background-color: #fff;
+    }
+
+    .contact-section input[type="text"]:focus,
+    .contact-section select:focus {
+      border-color: #1976d2;
+      box-shadow: 0 0 5px rgba(25, 118, 210, 0.2);
+    }
+
+    .proposal-row input[type="button"] {
+      background: linear-gradient(to right, #1565c0, #1e88e5);
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .proposal-row input[type="button"]:hover {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
     }
 
     .footer {
-        text-align: center;
-        font-style: italic;
-        margin-top: 12px;
-        font-size: 14px;
+      text-align: center;
+      font-style: italic;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+      padding-top: 4px;
     }
   </style>
 </head>
@@ -140,12 +226,13 @@
     <h1>PT. KONSTRUKSI JAYA UTAMA</h1>
 
     <div class="hero">
-        <img src="https://picsum.photos/id/1071/1200/400" alt="Gambar Utama">
+      <img src="https://picsum.photos/id/1071/1200/400" alt="Gambar Utama">
     </div>
 
     <p class="tagline">
-        Solusi Terpercaya untuk Pembangunan Gedung, Jembatan, dan Infrastruktur Islam
+      Solusi Terpercaya untuk Pembangunan Gedung, Jembatan, dan Infrastruktur Islam
     </p>
+
     <hr>
 
     <h2>Layanan Unggulan Kami</h2>
@@ -189,7 +276,9 @@
         </tr>
       </table>
     </div>
-    <hr/>
+
+    <hr>
+
     <div class="contact-section">
       <h2>Hubungi Departemen Pemasaran</h2>
 
@@ -203,7 +292,7 @@
           <label for="jenis">Jenis Proyek:</label>
           <select id="jenis" name="jenis">
             <option>Residensial</option>
-            <option>komersial</option>
+            <option>Komersial</option>
             <option>Infrastruktur</option>
           </select>
         </div>
@@ -214,12 +303,12 @@
         </div>
 
         <div class="proposal-row">
-            <label>Kirimkan Proposal:</label>
-            <input type="button" value="Ajukan Penawaran">
+          <label>Kirimkan Proposal:</label>
+          <input type="button" value="Ajukan Penawaran">
         </div>
 
-        <hr/>
-        </form>
+        <hr>
+      </form>
     </div>
 
     <div class="footer">
