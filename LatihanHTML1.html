@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT. Konstruksi Jaya Utama</title>
+  <style>
+    body {
+        font-family: "Times New Roman", serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 98%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .hero img {
+        width: 800px;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        margin-left: 0;
+    }
+
+    .tagline {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid black;
+        margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .layanan-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .layanan-box {
+        width: 48%;
+    }
+
+    .layanan-box h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .layanan-box p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .layanan-box img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .project-section p {
+        font-size: 14px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    table, th, td {
+        border: 1px solid grey;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        vertical-align: middle;
+        font-size: 14px;
+    }
+
+    th {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    td img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contact-section {
+        margin-top: 20px;
+    }
+
+    .contact-section label {
+        display: inline-block;
+        width: 130px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .contact-section input,
+    .contact-section select {
+        font-size: 14px;
+        padding: 2px 4px;
+    }
+
+    .footer {
+        text-align: center;
+        font-style: italic;
+        margin-top: 12px;
+        font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PT. KONSTRUKSI JAYA UTAMA</h1>
+
+    <div class="hero">
+        <img src="https://picsum.photos/id/1071/1200/400" alt="Gambar Utama">
+    </div>
+
+    <p class="tagline">
+        Solusi Terpercaya untuk Pembangunan Gedung, Jembatan, dan Infrastruktur Islam
+    </p>
+    <hr>
+
+    <h2>Layanan Unggulan Kami</h2>
+
+    <div class="layanan-container">
+      <div class="layanan-box">
+        <h3>1. Perencanaan Arsitektur</h3>
+        <p>Kami merancang gedung impian Anda dengan efisiensi biaya dan estetika tinggi.</p>
+        <img src="https://picsum.photos/id/3/300/200" alt="Perencanaan Arsitektur">
+      </div>
+
+      <div class="layanan-box">
+        <h3>2. Manajemen Proyek</h3>
+        <p>Pengawasan ketat untuk memastikan proyek selesai tepat waktu dan sesuai standar keamanan.</p>
+        <img src="https://picsum.photos/id/2/300/200" alt="Manajemen Proyek">
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2>Proyek Terbaru</h2>
+      <p>Berikut adalah beberapa proyek yang berhasil kami selesaikan:</p>
+
+      <table>
+        <tr>
+          <th>Nama Proyek</th>
+          <th>Lokasi</th>
+          <th>Tahun Selesai</th>
+          <th>Foto Proyek</th>
+        </tr>
+        <tr>
+          <td>Apartemen SkyView</td>
+          <td>Jakarta Selatan</td>
+          <td>2023</td>
+          <td><img src="https://picsum.photos/id/122/100/100" alt="Apartemen SkyView"></td>
+        </tr>
+        <tr>
+          <td>Jembatan Mahakam II</td>
+          <td>Samarinda</td>
+          <td>2022</td>
+          <td><img src="https://picsum.photos/id/124/100/100" alt="Jembatan Mahakam II"></td>
+        </tr>
+      </table>
+    </div>
+    <hr/>
+    <div class="contact-section">
+      <h2>Hubungi Departemen Pemasaran</h2>
+
+      <form>
+        <div>
+          <label for="nama">Nama Perusahaan:</label>
+          <input type="text" id="nama" name="nama">
+        </div>
+
+        <div>
+          <label for="jenis">Jenis Proyek:</label>
+          <select id="jenis" name="jenis">
+            <option>Residensial</option>
+            <option>komersial</option>
+            <option>Infrastruktur</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="anggaran">Estimasi Anggaran:</label>
+          <input type="text" id="anggaran" name="anggaran">
+        </div>
+
+        <div class="proposal-row">
+            <label>Kirimkan Proposal:</label>
+            <input type="button" value="Ajukan Penawaran">
+        </div>
+
+        <hr/>
+        </form>
+    </div>
+
+    <div class="footer">
+      Kantor Pusat: Menara Konstruksi, Lt. 10, Surabaya.
+    </div>
+  </div>
+</body>
+</html>
