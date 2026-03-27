@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 4</title>
+</head>
+<body>
+  <h2>Kalkulator Bangun Datar</h2>
+
+  <input type="number" id="input1" placeholder="Input 1">
+  <br><br>
+  <input type="number" id="input2" placeholder="Input 2">
+  <br><br>
+
+  <button onclick="luasPersegi()">Luas Persegi</button>
+  <button onclick="luasPersegiPanjang()">Luas Persegi Panjang</button>
+  <button onclick="luasSegitiga()">Luas Segitiga</button>
+  <button onclick="luasLingkaran()">Luas Lingkaran</button>
+
+  <p id="hasilBangun">Hasil: </p>
+
+  <script>
+    function luasPersegi() {
+      let s = parseFloat(document.getElementById("input1").value);
+      let hasil = s * s;
+
+      document.getElementById("hasilBangun").innerHTML = "Hasil luas persegi: " + hasil;
+    }
+
+    function luasPersegiPanjang() {
+      let p = parseFloat(document.getElementById("input1").value);
+      let l = parseFloat(document.getElementById("input2").value);
+      let hasil = p * l;
+
+      document.getElementById("hasilBangun").innerHTML = "Hasil luas persegi panjang: " + hasil;
+    }
+
+    function luasSegitiga() {
+      let a = parseFloat(document.getElementById("input1").value);
+      let t = parseFloat(document.getElementById("input2").value);
+      let hasil = 0.5 * a * t;
+
+      document.getElementById("hasilBangun").innerHTML = "Hasil luas segitiga: " + hasil;
+    }
+
+    function luasLingkaran() {
+      let r = parseFloat(document.getElementById("input1").value);
+      let hasil = Math.PI * r * r;
+
+      document.getElementById("hasilBangun").innerHTML = "Hasil luas lingkaran: " + hasil;
+    }
+  </script>
+</body>
+</html>

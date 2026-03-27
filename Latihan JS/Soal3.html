@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 3</title>
+</head>
+<body>
+  <h2>Kalkulator Sederhana</h2>
+
+  <input type="number" id="angka1" placeholder="Angka pertama">
+  <br><br>
+  <input type="number" id="angka2" placeholder="Angka kedua">
+  <br><br>
+
+  <button onclick="hitungJumlah()">Hitung</button>
+
+  <p id="hasil">Hasil: </p>
+
+  <script>
+    function hitungJumlah() {
+      let angka1 = parseFloat(document.getElementById("angka1").value);
+      let angka2 = parseFloat(document.getElementById("angka2").value);
+
+      let hasil = angka1 + angka2;
+
+      document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+    }
+  </script>
+</body>
+</html>
